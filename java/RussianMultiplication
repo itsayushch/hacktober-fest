@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class RussianMultiplication {
+
+	void result(int a,int b)
+	{
+
+		          int c=0;
+
+		    while(a>0)
+		    {
+
+	            System.out.print(a+"\t"+b+"\t");
+
+		        if(a%2==0)
+		        {
+		            b=b*2;
+		            a=a/2;
+		            System.out.print("\n");
+
+		        }
+		        else
+		        {
+
+		            c=c+b;
+		              b=b*2;
+		            System.out.print("\t="+c+"\n");
+		            a=a/2;
+
+		        }
+		    }
+
+	  }
+
+    public static void main(String arg[]) {
+        int a,b;
+        System.out.print("Enter Multiplicand and Multiplier and you will get the Product  ");
+
+        Scanner s=new Scanner(System.in);
+        a=s.nextInt();
+        b=s.nextInt();
+
+        RussianMultiplication rm=new RussianMultiplication;
+        rm.result(a,b);
+    }
+}
